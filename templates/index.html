@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>AI Business Pitch Generator</title>
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+  <div class="container"> 
+    <h1>🚀 AI Business Pitch Generator</h1>
+    <p class="subtitle">Get elevator pitches, taglines, and more using AI</p>
+
+    <div class="form-group">
+      <label>💡 Startup Idea</label>
+      <input type="text" id="idea" placeholder="Enter your startup idea">
+    </div>
+
+    <div class="form-group">
+      <label>❗ Problem Being Solved</label>
+      <textarea id="problem" placeholder="What problem does it solve?"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>🎯 Target Audience</label>
+      <input type="text" id="audience" placeholder="Who will use it?">
+    </div>
+
+    <div class="form-group">
+      <label>✨ Main Features (comma separated)</label>
+      <textarea id="features" placeholder="Feature1, Feature2, Feature3"></textarea>
+    </div>
+
+    <button onclick="generatePitch()">⚡ Generate Pitch</button>
+
+    <div id="loader" class="loader hidden"></div>
+    <div id="result"></div>
+  </div>
+
+  <script src="../static/golu.js"></script>
+</body>
+
+</html>
